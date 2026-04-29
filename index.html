@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thai Binh — Portfolio</title>
+  <meta name="description"
+    content="Portfolio cá nhân của Thai Binh — Developer & Creator. Khám phá các dự án, kỹ năng và chứng chỉ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Thai Binh<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">Giới thiệu</a></li>
+        <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+        <li><a href="#certifications" class="nav-link">Chứng chỉ</a></li>
+        <li><a href="#projects" class="nav-link">Dự án</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Liên hệ</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+          </svg>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Sẵn sàng cho cơ hội mới
+      </div>
+      <h1 class="hero-title">
+        Xin chào, mình là
+        <span class="hero-name">Thai Binh</span>
+      </h1>
+      <p class="hero-subtitle">
+        Data Analyst & AI Enthusiast đam mê khám phá tri thức từ dữ liệu và xây dựng các mô hình thông minh giải quyết
+        bài toán thực tế.
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Xem dự án</a>
+        <a href="#contact" class="btn btn-ghost">Liên hệ ngay</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Dự án</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Chứng chỉ</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Năm kinh nghiệm</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Giới thiệu</span>
+        <h2 class="section-title">Về bản thân mình</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="about-text">
+            Mình là một người theo đuổi lĩnh vực Trí tuệ Nhân tạo (AI) và Khoa học Dữ liệu (Data Science), với niềm đam
+            mê khai thác dữ liệu để tạo ra những giá trị thực tiễn. Mình tin rằng một mô hình tốt không chỉ đạt độ chính
+            xác cao mà còn phải giải quyết được bài toán thực tế và hỗ trợ ra quyết định hiệu quả.
+          </p>
+          <p class="about-text">
+            Với nền tảng về Machine Learning, phân tích dữ liệu và tư duy thống kê, mình luôn tìm kiếm những thử thách
+            mới để nâng cao kỹ năng, đồng thời đóng góp vào các dự án có ý nghĩa, nơi dữ liệu được chuyển hóa thành
+            insight và tác động thực tế.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <span class="detail-text">Việt Nam</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <span class="detail-text">Sinh viên Công nghệ Thông tin</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">💻</span>
+              <span class="detail-text">AI/Data Analysis</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">🎯</div>
+            <h3 class="highlight-title">Tập trung vào chất lượng</h3>
+            <p class="highlight-desc">Mỗi dòng code đều được viết với sự cẩn thận và mục đích rõ ràng.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🚀</div>
+            <h3 class="highlight-title">Luôn học hỏi</h3>
+            <p class="highlight-desc">Không ngừng cập nhật công nghệ mới để mang lại giải pháp tốt nhất.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🤝</div>
+            <h3 class="highlight-title">Teamwork</h3>
+            <p class="highlight-desc">Hợp tác hiệu quả và giao tiếp rõ ràng trong mọi dự án.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section--alt" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Kỹ năng</span>
+        <h2 class="section-title">Năng lực chuyên môn</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Data Analysis</h3>
+          <div class="skill-items">
+            <div class="skill-chip">Python (Pandas, Numpy)</div>
+            <div class="skill-chip">SQL (PostgreSQL, MySQL)</div>
+            <div class="skill-chip">Power BI / Tableau</div>
+            <div class="skill-chip">Exploratory Data Analysis (EDA)</div>
+            <div class="skill-chip">Data Cleaning</div>
+            <div class="skill-chip">Statistics</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">AI & Machine Learning</h3>
+          <div class="skill-items">
+            <div class="skill-chip">Scikit-learn</div>
+            <div class="skill-chip">Fuzzy Logic</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Công cụ & Quy trình</h3>
+          <div class="skill-items">
+            <div class="skill-chip">Git / GitHub</div>
+            <div class="skill-chip">Jupyter Notebook</div>
+            <div class="skill-chip">Docker (MLOps)</div>
+            <div class="skill-chip">Google Colab</div>
+            <div class="skill-chip">Streamlit / Flask (Deploy Model)</div>
+            <div class="skill-chip">Excel (VBA/Power Query)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Chứng chỉ</span>
+        <h2 class="section-title">Hành trình học tập</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-image-container">
+            <img src="Images/Coursera.png" alt="Google Business Intelligence" class="cert-img">
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Google Business Intelligence</h3>
+            <p class="cert-issuer">Google / Coursera</p>
+            <p class="cert-date">2025</p>
+          </div>
+          <div class="cert-link"><a href="https://www.coursera.org/account/accomplishments/specialization/R2877YO0706I"
+              class="btn btn-sm">Xem →</a></div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-image-container">
+            <img src="Images/Udemy1.png" alt="Google Data Analytics" class="cert-img">
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Machine Learning and Data Science Made Simple</h3>
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-date">2026</p>
+          </div>
+          <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-a832eb7e-ec1a-4d90-bb7d-8c39118ab705/"
+              class="btn btn-sm">Xem →</a></div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-image-container">
+            <img src="Images/Udemy2.png" alt="Google Data Analytics" class="cert-img">
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Guide to Python Data Analysis with Real Dataset</h3>
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-date">2026</p>
+          </div>
+          <div class="cert-link"><a href="https://www.udemy.com/certificate/UC-6f35670a-a2e3-471e-a325-e0c6494ad1a8/"
+              class="btn btn-sm">Xem →</a></div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-image-container">
+            <img src="Images/MLOps.png" alt="Google Data Analytics" class="cert-img">
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">MLOps</h3>
+            <p class="cert-issuer">Google Skills</p>
+            <p class="cert-date">2026</p>
+          </div>
+          <div class="cert-link"><a href="https://www.skills.google/paths/1283/course_templates/927/badge"
+              class="btn btn-sm">Xem →</a></div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-image-container">
+            <img src="Images/Udemy3.png" alt="Google Data Analytics" class="cert-img">
+          </div>
+          <div class="cert-content">
+            <h3 class="cert-title">Strategic Leadership</h3>
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-date">2026</p>
+          </div>
+          <div class="cert-link"><a href="#" class="btn btn-sm">Xem →</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section section--alt" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Dự án</span>
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+      </div>
+
+      <div class="projects-single">
+        <div class="project-card project-card--featured">
+          <div class="project-image">
+            <div class="project-image-container">
+              <img src="Images/Project.png" alt="Depression Prediction System Diagram" class="project-img-file">
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">AI/Machine Learning</span>
+              <span class="project-tag">Fuzzy Logic</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Data Analysis</span>
+            </div>
+            <h3 class="project-title">Depression Prediction System</h3>
+            <p class="project-desc">
+              Hệ thống hỗ trợ chẩn đoán và dự đoán mức độ trầm cảm dựa trên logic mờ (Fuzzy Logic).
+              Sản phẩm kết hợp giữa kiến thức y khoa lâm sàng và kỹ thuật tính toán thông minh để
+              đưa ra kết quả phân tích định lượng từ các dữ liệu định tính của người dùng.
+            </p>
+
+            <ul class="project-features" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+              <li>• Xây dựng bộ quy tắc mờ (Fuzzy Rules) dựa trên tiêu chuẩn chẩn đoán tâm lý.</li>
+              <li>• Xử lý và làm sạch dữ liệu đầu vào để tối ưu độ chính xác của mô hình.</li>
+              <li>• Trực quan hóa kết quả phân tích giúp người dùng dễ dàng thấu hiểu tình trạng bản thân.</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://tramcam.streamlit.app/" class="btn btn-sm btn-primary">Xem Demo Dự Án →</a>
+              <a href="https://github.com/hnibneyugn/Depression-prediction-with-ML-and-Fuzzy-Logic"
+                class="btn btn-sm">Chi tiết trên GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 3rem; color: var(--text-muted); font-style: italic;">
+        Đang cập nhật thêm các dự án mới về Computer Vision và Big Data...
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">Liên hệ</span>
+        <h2 class="section-title">Hãy kết nối với mình</h2>
+        <p class="section-subtitle">
+          Bạn có dự án thú vị hoặc cơ hội hợp tác? Mình rất muốn nghe từ bạn!
+        </p>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:binhn1292n@gmail.com" class="contact-card" id="contact-email">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">binhn1292@gmail.com</span>
+        </a>
+        <a href="https://github.com/hnibneyugn" target="_blank" class="contact-card" id="contact-github">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
+          </div>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">hnibneyugn</span>
+        </a>
+        <a href="https://www.linkedin.com/in/bin-neyugn-162a0b297/" target="_blank" class="contact-card"
+          id="contact-linkedin">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </div>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Bin Neyugn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copyright">© 2026 Thai Binh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

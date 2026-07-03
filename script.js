@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollReveal();
   initCountUp();
   initSmoothScroll();
+  initNavScrollSpy();
 });
 
 /* --- Navbar scroll effect --- */
@@ -135,6 +136,41 @@ function animateCounter(el) {
   }
 
   requestAnimationFrame(update);
+}
+
+/* --- Nav active state: follows the section in view, jumps instantly on click --- */
+function initNavScrollSpy() {
+  const navLinks = Array.from(document.querySelectorAll(".nav-link"));
+  const sections = navLinks
+    .map((link) => document.querySelector(link.getAttribute("href")))
+    .filter(Boolean);
+
+  function setActive(link) {
+    navLinks.forEach((l) => l.classList.remove("active"));
+    if (link) link.classList.add("active");
+  }
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => setActive(link));
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) {
+        const activeLink = navLinks.find(
+          (link) => link.getAttribute("href") === `#${visible.target.id}`
+        );
+        setActive(activeLink);
+      }
+    },
+    { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 }
 
 /* --- Dark Mode toggle with localStorage --- */

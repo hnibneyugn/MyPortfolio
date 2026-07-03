@@ -305,6 +305,45 @@
             </div>
           </div>
         </div>
+
+        <div class="project-card project-card--featured">
+          <div class="project-image">
+            <div class="project-image-container">
+              <img src="Images/Chatbot.png" alt="Trợ lý tra cứu Nghị định 116/2020/NĐ-CP" class="project-img-file">
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="project-tag">RAG</span>
+              <span class="project-tag">LlamaIndex</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">MongoDB Atlas</span>
+            </div>
+            <h3 class="project-title">Trợ lý tra cứu Nghị định 116/2020/NĐ-CP</h3>
+            <p class="project-desc">
+              Chatbot pháp lý ứng dụng RAG (Retrieval-Augmented Generation) giúp sinh viên và cán bộ tra cứu
+              nhanh chính sách hỗ trợ học phí, chi phí sinh hoạt cho sinh viên sư phạm, với câu trả lời trích dẫn
+              rõ Điều/Khoản và bám sát văn bản gốc thay vì suy diễn từ kiến thức nền của LLM. Tự thiết kế toàn bộ
+              kiến trúc retrieval và pipeline ingestion/query, kết hợp vector search, lọc theo cấu trúc văn bản
+              luật và Atlas Search để đảm bảo độ chính xác pháp lý. Hệ thống được tối ưu độ trễ bằng streaming
+              trực tiếp (SSE) và chỉ viết lại câu hỏi bằng LLM khi thực sự cần thiết.
+            </p>
+
+            <ul class="project-features" style="margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+              <li>• Hybrid retrieval: vector similarity + lọc metadata theo Chương/Mục/Điều + Atlas Search cụm từ chính xác.</li>
+              <li>• Re-ranking theo rule: boost điểm cho chunk khớp cụm từ trong ngoặc kép và mật độ từ khoá trùng khớp.</li>
+              <li>• Prompt rewrite có điều kiện: chỉ gọi thêm LLM để viết lại câu hỏi mơ hồ khi cần, tránh tốn latency.</li>
+              <li>• Tách rời retrieve/generate, bỏ synthesizer mặc định, gọi thẳng streaming API để giảm Time-To-First-Token.</li>
+              <li>• Guardrail chặn câu hỏi ngoài phạm vi văn bản hoặc dò thông tin hệ thống nội bộ trước khi chạm LLM.</li>
+              <li>• Ingestion giữ nguyên cấu trúc pháp lý gốc (Chương/Mục/Điều) thay vì chunk cơ học theo độ dài.</li>
+            </ul>
+
+            <div class="project-links">
+              <a href="https://chatbot.hcmue.info.vn/" class="btn btn-sm btn-primary" target="_blank">Xem Demo Dự Án →</a>
+            </div>
+          </div>
+        </div>
       </div>
 
       <p style="text-align: center; margin-top: 3rem; color: var(--text-muted); font-style: italic;">

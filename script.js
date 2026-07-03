@@ -3,6 +3,7 @@
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (window.lucide) lucide.createIcons();
   initDarkMode();
   initNavbar();
   initMobileMenu();

@@ -216,24 +216,6 @@ ul {
   width: 100%;
 }
 
-.nav-link--cta {
-  background: var(--charcoal);
-  color: var(--off-white) !important;
-  padding: 8px 20px;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--btn-inset);
-  transition: opacity var(--duration) var(--ease),
-    box-shadow var(--duration) var(--ease);
-}
-
-.nav-link--cta::after {
-  display: none;
-}
-
-.nav-link--cta:hover {
-  opacity: 0.88;
-}
-
 .nav-toggle {
   display: none;
   background: none;
@@ -637,7 +619,10 @@ ul {
 }
 
 .detail-icon {
-  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--charcoal);
 }
 
 .about-highlights {
@@ -659,7 +644,9 @@ ul {
 }
 
 .highlight-icon {
-  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--charcoal);
   margin-bottom: var(--space-sm);
 }
 
@@ -1144,12 +1131,6 @@ ul {
     pointer-events: all;
   }
 
-  .nav-link--cta {
-    width: 100%;
-    text-align: center;
-    margin-top: var(--space-xs);
-  }
-
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -1230,11 +1211,6 @@ ul {
       rgba(60, 100, 200, 0.1) 35%,
       rgba(40, 80, 160, 0.06) 60%,
       transparent 80%);
-}
-
-[data-theme="dark"] .nav-link--cta {
-  background: var(--charcoal);
-  color: #141414 !important;
 }
 
 [data-theme="dark"] .btn-primary {
